@@ -1,0 +1,27 @@
+----------------***************************** FLOW OF THE PROJECT *****************************---------------------------------
+
+This project is made with the use of two Micros-Services: ProductMicroService and UserMicroService.
+
+1. Run both the Micro-Services: ProductMicroService and UserMicroService.
+
+2. Once they are started, go to the Home.html page: "http://localhost:8080/Home.html".
+
+3. Login as admin. The username and password are:
+	username: muzammil
+	password: hasan
+
+4. Once successfully logged in, the page will display all the tasks that the admin can perform. The url for this page is: "http://localhost:8080/AdminLogin.html"
+
+5. Copy and paste this url(http://localhost:8080/AdminLogin.html) on the Postman app and perform the operations listed on that page. Each operation will use either the GET, POST, PUT or DELETE method. I have mentioned which operation uses which method within the page itself.
+
+6. The admin can add, update or delete a Product. Admin can also search for a product by providing the productId.
+
+7. The admin can add, update or delete a User. Admin can also search for a user by providing either the userId or productId.
+
+8. The admin can also view Order details for a particular productId. For this, the productId given in the Users table(UserMicroService) should match with the productID generated in the Product table(ProductMicroService) in order to combine the data of both the tables. Thus giving the complete order details. The order details has four information:
+	
+	productId: This is the Id of the product purchased. Ex- 1,2,3 etc.
+	Category: This is the category of the product. Ex- Sports shoes, Casual shoes, Formal shoes, etc.
+	Name: This gives the name of the product. Ex- Nike, Puma, Adidas, etc.
+	Colour: This tells the colour of the shoes. Ex- Red, Blue, Green, etc.
+	Username: This mentions the name of the User that has purchased this product.

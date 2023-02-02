@@ -1,4 +1,4 @@
-----------------***************************** FLOW OF THE PROJECT *****************************---------------------------------
+-----------------------***************************** FLOW OF THE PROJECT *****************************---------------------------------
 
 This project is made with the use of two Micros-Services: ProductMicroService and UserMicroService.
 
